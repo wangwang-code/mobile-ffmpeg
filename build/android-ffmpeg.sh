@@ -409,6 +409,16 @@ ${SED_INLINE} 's/static int av_log_level/__thread int av_log_level/g' ${BASEDIR}
     --disable-nvenc \
     --disable-vaapi \
     --disable-vdpau \
+    --disable-everything \
+    --enable-decoder=mjpeg \
+    --enable-demuxer=mjpeg,concat,image2 \
+    --enable-encoder=libwebp,libwebp_anim \
+    --enable-muxer=webp \
+    --enable-protocol=file,concat \
+    --enable-parser=mjpeg \
+    --enable-filter=concat,format,null,scale \
+    --enable-zlib \
+    --enable-libwebp \
     ${CONFIGURE_POSTFIX} 1>>${BASEDIR}/build.log 2>&1
 
 if [ $? -ne 0 ]; then

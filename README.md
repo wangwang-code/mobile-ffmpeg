@@ -1,4 +1,4 @@
-# 专为Shaft2定制的mobile-ffmpeg
+# 专为Shaft2定制的mobile-ffmpeg（已弃用）
 
 decoder:`mjpeg`
 
